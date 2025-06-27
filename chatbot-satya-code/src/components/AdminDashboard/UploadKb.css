@@ -1,0 +1,253 @@
+/* components/AdminDashboard/UploadKB.css */
+.upload-kb {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.upload-guide {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.guide-box {
+  background: #e3f2fd;
+  border: 1px solid #90caf9;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.guide-box h3 {
+  color: #1976d2;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.guide-box p {
+  color: #1565c0;
+  font-size: 16px;
+  margin: 0;
+}
+
+.upload-section {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.upload-area {
+  position: relative;
+  width: 100%;
+}
+
+.file-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.upload-label {
+  display: block;
+  background: white;
+  border: 2px dashed #667eea;
+  border-radius: 15px;
+  padding: 60px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.upload-label:hover {
+  border-color: #5a67d8;
+  background: #f8f9fa;
+}
+
+.upload-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.upload-label h4 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.upload-label p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Progress Card Styles */
+.progress-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: 1px solid #e1e5e9;
+}
+
+.progress-card h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.progress-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.progress-item.uploading {
+  border-color: #ffc107;
+  background: #fff8e1;
+}
+
+.progress-item.embedding {
+  border-color: #667eea;
+  background: #f3f4ff;
+}
+
+.progress-item.complete {
+  border-color: #28a745;
+  background: #f1f8e9;
+}
+
+/* Success Message */
+.upload-success {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: 2px solid #28a745;
+  text-align: center;
+}
+
+.upload-success h3 {
+  color: #28a745;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.upload-success p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.success-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* Uploaded Files Display */
+.uploaded-files-display {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.uploaded-files-display h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.uploaded-files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.uploaded-file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #28a745;
+  border-radius: 12px;
+  background: #f1f8e9;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.file-icon {
+  font-size: 24px;
+}
+
+.file-details h4 {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.file-details p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.file-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-icon {
+  font-size: 20px;
+}
+
+.status-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.progress-item.uploading .status-text {
+  color: #f57c00;
+}
+
+.progress-item.embedding .status-text {
+  color: #667eea;
+}
+
+.progress-item.complete .status-text,
+.uploaded-file-item .status-text {
+  color: #388e3c;
+}
+
+/* Center everything */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

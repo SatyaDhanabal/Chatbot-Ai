@@ -1,0 +1,160 @@
+/* components/AdminDashboard/UserDetail.css */
+.user-detail {
+  max-width: 1200px;
+}
+
+.user-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #5a67d8;
+}
+
+.user-detail h2 {
+  color: #333;
+  font-size: 28px;
+}
+
+.user-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.user-stats .stat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-stats .stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+.user-stats .stat-card:nth-child(1) .stat-icon {
+  background: #667eea;
+}
+
+.user-stats .stat-card:nth-child(2) .stat-icon {
+  background: #28a745;
+}
+
+.user-stats .stat-card:nth-child(3) .stat-icon {
+  background: #dc3545;
+}
+
+.user-stats .stat-info h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.user-stats .stat-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.user-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+}
+
+.user-charts .chart-section {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-charts h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.user-charts .chart {
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  height: 250px;
+  padding: 20px 0;
+  border-bottom: 2px solid #e1e5e9;
+  border-left: 2px solid #e1e5e9;
+}
+
+.user-charts .chart-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-charts .bar-group {
+  display: flex;
+  align-items: end;
+  gap: 4px;
+  height: 150px;
+}
+
+.user-charts .bar {
+  width: 20px;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.5s ease;
+}
+
+.user-charts .bar.chats {
+  background: #667eea;
+}
+
+.user-charts .bar.likes {
+  background: #28a745;
+}
+
+.user-charts .bar.dislikes {
+  background: #dc3545;
+}
+
+.user-charts .bar-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-charts {
+    grid-template-columns: 1fr;
+  }
+}
